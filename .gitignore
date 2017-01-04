@@ -10,3 +10,5 @@ SRT_trajectoryRL_journal.log
 SRT_trajectoryRL_journal.pdf
 
 SRT_trajectoryRL_journal.synctex.gz
+
+*.log
