@@ -71,6 +71,10 @@ The purpose of the first experiment was to use the trajectory SRT paradigm to re
 
 Participants in this experiment were 22 Leiden University undergraduate students who participated in exchange for 3.5 euros or 1 course credit.
 
+\subsubsection{Apparatus and materials}
+
+The experiment was performed on a computer with a 21" monitor with 60 Hz refresh rate. Participants used a mouse to move the cursor. The experiment was programmed in Python with the PyGame library, and cursor position was sampled at every screen refresh. 
+
 \subsubsection{Procedure}
 
 Participants were alternately assigned to one of the two between-subjects conditions according to the order they signed up. In the NB87 sequence condition, participants were given a repeating sequence of 10 locations corresponding to the \citeA{Nissen:1987} sequence (4-2-3-1-3-2-4-3-2-1). In the random sequence condition, participants followed a randomly generated movement sequence without repetitions (i.e., staying at the same location). 
@@ -170,12 +174,12 @@ Sequence Index  &  Hit RT  &  Average errors  \\ % Maybe over trials instead of 
 
 \subsubsection{Trajectory results}
 
-Figure \ref{fig:ex-trial} shows an example of mouse movements during a characteristic trial from each condition. Participants in the random condition (e.g., Figure \ref{fig:ex-trial} left) tend to re-center the cursor after hitting a target, during the 500 ms ISI. This strategy is not unreasonable under conditions of uncertainty, as it minimizes the distance to potential targets, and the next target cannot be predicted in the random condition. Centering behavior is shown in Figure \ref{fig:centering}. As the experiment progresses, participants in the random condition adopt a centering strategy that minimizes distance to potential targets, while participants in the predictable NB87 condition do not show this behavior. Participants in the random condition spend an increasingly larger proportion of time in the center of the screen compared to NB87 participants, $F$(9,180) = 2.63, $p = .007$ for the interaction between block and condition.
+Figure \ref{fig:ex-trial} shows an example of mouse movements during a characteristic trial from each condition. Participants in the random condition (e.g., Figure \ref{fig:ex-trial} left) tend to re-center the cursor after hitting a target, during the 500 ms ISI. This strategy is not unreasonable under conditions of uncertainty, as it minimizes the distance to potential targets, and the next target cannot be predicted in the random condition. Centering behavior is shown in Figure \ref{fig:centering}. As the experiment progresses, participants in the random condition adopt a centering strategy that minimizes distance to potential targets, while participants in the predictable NB87 condition do not show this behavior. Participants in the random condition spend an increasingly larger proportion of time in the center of the screen compared to NB87 participants, $F$(9,180) = 2.51, $p = .010$ for the interaction between block and condition.
 
 \begin{figure}[!h]
   \centering
   \includegraphics[width=0.7\textwidth]{figures/centering_behavior}
-  \caption{Proportion of time spent in the center of the screen, defined as the center 10\% of the screen. Centering behavior in the random condition is clearly visible. Error bars show +/-1SE.}
+  \caption{Proportion of time spent in the center of the screen, defined as a 50 x 50 pixel square in the center of the screen. Centering behavior in the random condition is clearly visible. Error bars show +/-1SE.}
   \label{fig:centering}
 \end{figure} 
 
