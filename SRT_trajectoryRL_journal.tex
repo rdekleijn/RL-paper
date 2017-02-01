@@ -174,14 +174,27 @@ Sequence Index  &  Hit RT  &  Average errors  \\ % Maybe over trials instead of 
 
 \subsubsection{Trajectory results}
 
-Figure \ref{fig:ex-trial} shows an example of mouse movements during a characteristic trial from each condition. Participants in the random condition (e.g., Figure \ref{fig:ex-trial} left) tend to re-center the cursor after hitting a target, during the 500 ms ISI. This strategy is not unreasonable under conditions of uncertainty, as it minimizes the distance to potential targets, and the next target cannot be predicted in the random condition. Centering behavior is shown in Figure \ref{fig:centering}. Centering behavior is defined as the proportion of time spent in the center 100 x 100 pixels of the screen between reaching the previous target and current target reached. We deemed the distinction between reactive and predictive movements (as made by \citeA{Dale:2012aa}) unsuitable for the current analyses due to the random condition used to compare. As the experiment progresses, participants in the random condition adopt a centering strategy that minimizes distance to potential targets, while participants in the predictable NB87 condition do not show this behavior. Participants in the random condition spend an increasingly larger proportion of time in the center of the screen compared to NB87 participants, $F$(9,180) = 2.51, $p = .010$ for the interaction between block and condition. Similar centering behavior has been reported, but not quantified in the current context by \citeA{Duran:2009aa}, and \citeA{Dale:2012aa}.
+Figure \ref{fig:ex-trial} shows an example of mouse movements during a characteristic trial from each condition. Participants in the random condition (e.g., Figure \ref{fig:ex-trial} left) tend to re-center the cursor after hitting a target, during the 500 ms ISI. This strategy is not unreasonable under conditions of uncertainty, as it minimizes the distance to potential targets, and the next target cannot be predicted in the random condition. Centering behavior is shown in Figure \ref{fig:centering}a. Centering behavior is defined as the proportion of time spent in the center 100 x 100 pixels of the screen between reaching the previous target and current target reached. We deemed the distinction between reactive and predictive movements (as made by \citeA{Dale:2012aa}) unsuitable for the current analyses due to the random condition used to compare. As the experiment progresses, participants in the random condition adopt a centering strategy that minimizes distance to potential targets, while participants in the predictable NB87 condition do not show this behavior. Participants in the random condition spend an increasingly larger proportion of time in the center of the screen compared to NB87 participants, $F$(9,180) = 2.51, $p = .010$ for the interaction between block and condition. Similar centering behavior has been reported, but not quantified in the current context by \citeA{Duran:2009aa}, and \citeA{Dale:2012aa}. Interestingly, not all participants in the random condition display this centering strategy, as evidenced by the large standard errors, especially in the final half of the experiment. Instead, participants seem to employ either a non-centering strategy or a centering strategy in which they spend almost 25\% of the ISI in the center of the screen.
 
-\begin{figure}[!h]
-  \centering
-  \includegraphics[width=0.7\textwidth]{figures/centering_behavior}
-  \caption{Proportion of time spent in the center of the screen, defined as a 100 x 100 pixel square in the center of the screen. Centering behavior in the random condition is clearly visible. Error bars show +/-1SE.}
-  \label{fig:centering}
-\end{figure} 
+
+\begin{figure}[t] % [h]
+    \caption{Centering behavior during the ISI.}
+        \centering
+        \begin{subfigure}[t]{0.40\textwidth}
+                \includegraphics[width=\textwidth]{figures/centering_behavior}
+                \subcaption{Proportion of time spent in the center of the screen, defined as a 100 x 100 pixel square in the center of the screen. Centering behavior in the random condition is clearly visible. Error bars show +/-1SE.}
+        \end{subfigure}
+        ~
+        \begin{subfigure}[t]{0.40\textwidth} 
+                \includegraphics[width=\textwidth]{figures/centering_distribution}
+                \subcaption{Distribution of centering behavior for the last half of the experiment for the random condition. Two groups of participants can be identified: those who center during the ISI and those who do not.}
+        \end{subfigure}
+        \label{fig:centering}
+\end{figure}
+
+\addtocounter{figure}{-1}
+
+
 
 
 With learning, targets are predictable in the NB87 sequence condition, thus participants are expected to show faster reaction times (RTs) as training proceeds.
@@ -384,9 +397,14 @@ Although these common RL models were unable to reach human-level performance, we
 
 This paper introduced the trajectory serial reaction time task and found that it replicates the results of Experiment 1 of \citeA{Nissen:1987}. Thus, while the trajectory SRT paradigm retains the essence of the original SRT, it also affords the opportunity to measure a variety of more detailed statistics about subjects' continuous motions. Response trajectories can reveal uncertainty, predictive movements, reversals in decision, and other phenomena that may reveal the dynamics of the learning mechanisms at work. The present study examined the average trajectories of two isomorphic vertical movements that appear in the NB87 sequence, as well as in the random condition. The two movements have different subsequent stimuli in the NB87 condition, and were thus expected to show a sequential context effect: as participants learn where the next stimulus will be, they may start to move towards this response even as they finish the previous movement--as a piano player may reach for the next key while the current one is being sustained \cite{Soechting:1996}.
 
-We found not only that the expected context effects had developed by late training, but also evidence of possibly strategic adaptive behavior in the random condition. Many participants in the random condition developed a re-centering approach after each response, waiting for the next (unpredictable) stimulus to appear. In a way this behavior is optimal, since the center of the screen is as close as possible to all stimuli. Some participants in both conditions showed this behavior to a limited extent early in training, but those trained on the NB87 sequence lost this behavior over time as they learned to predict the location of the subsequent stimulus--hinted at by the decrease in reaction times in this condition, and confirmed by the deviation in average trajectory towards the subsequent stimuli.
+We found not only that the expected context effects had developed by late training, but also evidence of possibly strategic adaptive behavior in the random condition. Many participants in the random condition developed a re-centering approach after each response, waiting for the next (unpredictable) stimulus to appear. In a way this behavior is optimal, since the center of the screen is as close as possible to all stimuli. Some participants in both conditions showed this behavior to a limited extent early in training, but those trained on the NB87 sequence lost this behavior over time as they learned to predict the location of the subsequent stimulus--hinted at by the decrease in reaction times in this condition, and confirmed by the deviation in average trajectory towards the subsequent stimuli. Of the participants in the random condition, two groups could be identified: a centering group and a non-centering group. This might reflect differences in strategy similar to \citeauthor{Tubau:2007}'s \citeyear{Tubau:2007} stimulus-based vs. plan-based control mode, or \citeauthor{Dale:2012aa}'s \citeyear{Dale:2012aa} reactive vs. predictive movements. How these different behavioral strategies are related could be the focus of future research.
 
 Overall, the behavioral results show a striking similarity to the \citeA{Nissen:1987} results. The pattern of reaction times over sequence position was almost entirely equivalent to the pattern observed in the original study, although the movement reaction times were higher throughout training and participants showed less overall improvement. This can be explained through the mechanics of the paradigm: mouse movements require more time to be executed than single keypresses, and require some fine motor control and error correction. The sensitivity of the mouse can be adjusted to achieve a balance between RT and error; we used a very low sensitivity to reduce overall noise. Participants in the NB87 sequence condition nonetheless showed an increased number of errors during training, indicative of a speed-accuracy trade-off which was not present in the \citeA{Nissen:1987} results. It is possible that extending the training would eventually lead to a reduction of errors, as participants would gradually become aware of the sequence. 
+
+% ADD TUBAU REF
+
+
+
 
 %The centering behavior we encountered was previously found by \citeA{DuranDale:2009}, who tracked arm movements in a sequence learning experiment. Employing a 12-position array of stimulus positions, they asked participants to respond to targets by selecting them with a Nintendo Wiimote. Similar to our results, participants tended to re-center after successfully completing an arm movement. In an effort to prevent participants from engaging in this behavior, \citeA{DuranDale:2009} adapted the paradigm so that the array was visible during the entire experiment--as it was during our experiment. Although the centering strategy is somewhat intriguing in its own right--especially since it occurred rarely in the sequence condition, but subsequent research might benefit from discouraging it. Limiting the response-stimulus interval to somewhat less than the current 500 ms may limit the amount of time people can devote to re-centering.
 
@@ -400,7 +418,6 @@ In Experiment 2, we adapted the trajectory SRT paradigm to be a reinforcement le
 
 A bimodal distribution of scores showed that half of the participants did really well, as they made very few errors after roughly 10 repetitions of the sequence. Block-by-block analysis of the response times showed a difference in speed-up across the experiment, indicating the high-performing group learned the sequence much better than the low-performing group. The difference in response times to incorrect targets suggests the two groups might have used different strategies. The rare but increasingly-slow errors in the high-performing group suggest more time was spent figuring out the next stimulus, while the persistent and relatively fast errors of the low-performing group suggest participants may have adopted a probabilistic view of the task, randomly trying options instead of trying to learn a deterministic pattern.
 
-% ADD TUBAU REF
 
 
 Despite the major difference of no cueing of the next response, performance in the RL experiment was quite comparable to performance in the cued SRT experiment. The pattern of correlations indicated a difference between the low- and high-performing groups that was not immediately obvious. Overall, the cued SRT response times are correlated to RTs and accuracy data from the RL experiment, whereas this is not true for both the low- and high-performing groups separately. We expect this is due to different strategies among groups, leading to a different pattern of speed and accuracy at different sequence positions. 
