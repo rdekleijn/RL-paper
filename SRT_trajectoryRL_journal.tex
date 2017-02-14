@@ -121,26 +121,47 @@ After training, participants were given a generating task similar to the trainin
 
 \addtocounter{figure}{-1}
 
-Data were analyzed from the 22 participants (11 per condition) that completed the experiment. Median movement time to a target was 1,040 ms (sd: 1,776). Of 17,578 target arrival times, 84 were removed for being slower than 2,816 ms (median+sd). Each subject's median RT for correct movements on each block was computed. Figure~\ref{fig:basic-rt} shows the mean of median RTs by block for the two conditions. Participants in both conditions got faster over the course of the experiment, but participants in the NB87 sequence condition improved more than those in the random condition, replicating the \citeA{Nissen:1987} speedup. There was a 25\% reduction in reaction time over the course of training. These data were analyzed by a two-way analysis of variance, which indicated significant main effects of condition ($F$(1,20) = 31.3, \textit{p} \textless .001) and block ($F$(7,168) = 6.3, \textit{p} \textless .05), and a significant interaction effect ($F$(7,210) = 14.7, \textit{p} \textless .01) between the two.
+Data were analyzed from the 22 participants (11 per condition) that completed the experiment. Median movement time to a target was 1,040 ms (sd: 1,776). Of 17,578 target arrival times, 84 were removed for being slower than 2,816 ms (median+sd). Each subject's median RT for correct movements on each block was computed. Figure~\ref{fig:RT-ACC-exp1}a shows the mean of median RTs by block for the two conditions. Participants in both conditions got faster over the course of the experiment, but participants in the NB87 sequence condition improved more than those in the random condition, replicating the \citeA{Nissen:1987} speedup. There was a 25\% reduction in reaction time over the course of training. These data were analyzed by a two-way analysis of variance, which indicated significant main effects of condition ($F$(1,20) = 31.3, \textit{p} \textless .001) and block ($F$(7,168) = 6.3, \textit{p} \textless .05), and a significant interaction effect ($F$(7,210) = 14.7, \textit{p} \textless .01) between the two.
 
-\begin{figure}[!h]
-  \centering
-  \includegraphics[width=0.5\textwidth]{figures/exp1_basic_RT_result}
-  \caption{Mean of median RTs by block show that both conditions sped up over the course of Experiment 1, but that NB87 improved more. Error bars show +/-1SE.}
-  \label{fig:basic-rt}
-\end{figure} 
+%\begin{figure}[!h]
+%  \centering
+%  \includegraphics[width=0.5\textwidth]{figures/exp1_basic_RT_result}
+%  \caption{Mean of median RTs by block show that both conditions sped up over the course of Experiment 1, but that NB87 improved more. Error bars show +/-1SE.}
+%  \label{fig:basic-rt}
+%\end{figure} 
 
-The accuracy data is shown in Figure~\ref{fig:fail-block}. Accuracy was high across training blocks although it dropped over time in the NB87 group, particularly after the first three blocks of training.  A two-way analysis of variance confirmed a significant main effect of group ($F$(1,20) = 36.7, \textit{p} \textless .001) and a significant interaction effect ($F$(9,210) = 14.1, \textit{p} \textless .001). These results are evidence of sequence learning, replicating the \citeA{Nissen:1987} keypress-based results. However, there was a speed-accuracy tradeoff in the NB87 condition: both accuracy and RT dropped over time. This was not present in the \citeA{Nissen:1987} results, but can be explained through the difference in response execution. Key-presses are intermittent and can only be made in response to a stimulus (pre-stimulus responses were not recorded), while mouse movements are continuous and made constantly. Indeed, in the NB87 condition faster median hit RTs on a training block had a significant negative correlation with the number of errors in that block (for the 67 of 110 blocks containing errors; $r=-.56$, $t(65)=-5.48$, $p<.001$), showing a speed-accuracy tradeoff. This is likely due to the trajectory SRT paradigm encouraging prediction, allowing participants to move freely while performing the experiment. Indeed, an analysis of the proportion of distance traveled before arriving at the next target during the 500 ms interval before the cue appeared (i.e., predictive movement), shown in Figure~\ref{fig:predict}, shows that participants in the random condition level off at making half of their movement, on average, during the pre-cue interval, whereas by block 10, participants in the NB87 condition predictively completed over 57\% of their movement in the 500 ms interval before the next location is highlighted. This shows that participants in the NB87 are predicting the next target location and already moving towards--getting over halfway there--before the next cue appears.
+
+
+\begin{figure}[t] % [h]
+    \caption{Experiment 1 RTs and error rates by block.}
+        \centering
+        \begin{subfigure}[t]{0.41\textwidth}
+                \includegraphics[width=\textwidth]{figures/exp1_basic_RT_result}
+                \subcaption{Mean of median RTs by block show that both conditions sped up over the course of Experiment 1, but that NB87 improved more. Error bars show +/-1SE.}
+        \end{subfigure}
+        ~
+        \begin{subfigure}[t]{0.41\textwidth} 
+                \includegraphics[width=\textwidth]{figures/exp1_training_mistakes_per_block}
+                \subcaption{Mean number of errors by block shows only the NB87 participants made an increasing number of errors. Error bars show +/-1SE.}
+        \end{subfigure}
+        \label{fig:RT-ACC-exp1}
+\end{figure}
+
+\addtocounter{figure}{-1}
+
+
+
+The accuracy data is shown in Figure~\ref{fig:RT-ACC-exp1}b. Accuracy was high across training blocks although it dropped over time in the NB87 group, particularly after the first three blocks of training.  A two-way analysis of variance confirmed a significant main effect of group ($F$(1,20) = 36.7, \textit{p} \textless .001) and a significant interaction effect ($F$(9,210) = 14.1, \textit{p} \textless .001). These results are evidence of sequence learning, replicating the \citeA{Nissen:1987} keypress-based results. However, there was a speed-accuracy tradeoff in the NB87 condition: both accuracy and RT dropped over time. This was not present in the \citeA{Nissen:1987} results, but can be explained through the difference in response execution. Key-presses are intermittent and can only be made in response to a stimulus (pre-stimulus responses were not recorded), while mouse movements are continuous and made constantly. Indeed, in the NB87 condition faster median hit RTs on a training block had a significant negative correlation with the number of errors in that block (for the 67 of 110 blocks containing errors; $r=-.56$, $t(65)=-5.48$, $p<.001$), showing a speed-accuracy tradeoff. This is likely due to the trajectory SRT paradigm encouraging prediction, allowing participants to move freely while performing the experiment. Indeed, an analysis of the proportion of distance traveled before arriving at the next target during the 500 ms interval before the cue appeared (i.e., predictive movement), shown in Figure~\ref{fig:predict}, shows that participants in the random condition level off at making half of their movement, on average, during the pre-cue interval, whereas by block 10, participants in the NB87 condition predictively completed over 57\% of their movement in the 500 ms interval before the next location is highlighted. This shows that participants in the NB87 are predicting the next target location and already moving towards--getting over halfway there--before the next cue appears.
 %% todo: double-check what was calculated in fig:predict 
 % should we show speed profile analyses before and after the cue, to show that speed-up was or was not the cause of the faster NB87 movements? might clinch it.
 
 
-\begin{figure}[!h]
-  \centering
-  \includegraphics[width=0.47\textwidth]{figures/exp1_training_mistakes_per_block}
-  \caption{Mean number of errors by block shows only the NB87 participants made an increasing number of errors. Error bars show +/-1SE.}
-  \label{fig:fail-block}
-\end{figure} 
+%\begin{figure}[!h]
+%  \centering
+%  \includegraphics[width=0.47\textwidth]{figures/exp1_training_mistakes_per_block}
+%  \caption{Mean number of errors by block shows only the NB87 participants made an increasing number of errors. Error bars show +/-1SE.}
+%  \label{fig:fail-block}
+%\end{figure} 
 % GK: this is a really big graph to just say "errors went  up over time for NB87, but not random condition" I feel like a smaller version (combined with another figure? like the RT one?) would be sufficient...show something good and bad at the same time? or maybe we could even show a scatterplot with each subject's speedup vs. error rate (last block - first block), with plot character showing their condition?
 % oh, or maybe it's good to make a correct vs. incorrect RT RT graph, like we did for Exp 2? (Fig 8) dot size could show proportion of responses.
 
@@ -310,21 +331,44 @@ The overall median response time (RT) for all stimulus arrivals was 1,401 ms (sd
 
 \subsubsection{Accuracy}
 
-The mean number of errors made over the entire experiment was 19.8 (sd: 21.3) for the high-scoring group, and 63.5 (sd: 11.9) for the low-scoring group. Over time, the number of errors decreased especially for the high scoring group. Examining the errors made by each group of participants according to where they were in the sequence revealed that for both groups the fifth stimulus was particularly challenging. This is reflected in the mean number of errors for each group (see Figure~\ref{fig:mistakes-seqpos}, as well as in the mean RT to the target by sequence position (see Figure~\ref{fig:RT-seqpos}).
+The mean number of errors made over the entire experiment was 19.8 (sd: 21.3) for the high-scoring group, and 63.5 (sd: 11.9) for the low-scoring group. Over time, the number of errors decreased especially for the high scoring group. Examining the errors made by each group of participants according to where they were in the sequence revealed that for both groups the fifth stimulus was particularly challenging. This is reflected in the mean number of errors for each group (see Figure~\ref{fig:RT-ACC-seqpos}b, as well as in the mean RT to the target by sequence position (see Figure~\ref{fig:RT-ACC-seqpos}a).
 
-\begin{figure}[!h]
-  \centering
-  \includegraphics[width=0.48\textwidth]{figures/RL_HitRT_by_seqpos}
-  \caption{Mean of subjects' median correct response times by median split and sequential position. The correct RTs for the two performance groups were not significantly correlated ($r=0.17$, t(8)=0.48, $p=0.65$). Error bars reflect +/-1SE.}
-  \label{fig:RT-seqpos}
+%\begin{figure}[!h]
+%  \centering
+%  \includegraphics[width=0.48\textwidth]{figures/RL_HitRT_by_seqpos}
+%  \caption{Mean of subjects' median correct response times by median split and sequential position. The correct RTs for the two performance groups were not significantly correlated ($r=0.17$, t(8)=0.48, $p=0.65$). Error bars reflect +/-1SE.}
+%  \label{fig:RT-seqpos}
+%\end{figure}
+%
+%\begin{figure}[!h]
+%  \centering
+%  \includegraphics[width=0.48\textwidth]{figures/RL_mistakes_by_seqpos}
+%  \caption{The mean number of errors made at each position in the sequence split by performance group. The errors are highly correlated ($r=$.79, t(8)=3.68, $p<.01$), though note how much worse sequence position 5 was for the low-performing group relative to the next-worst position (8). Low-performers showed twice as many errors in position 5 as in 8, while the high-performing group showed only a 25\% increase in errors. Error bars reflect +/-1SE.}
+%  \label{fig:mistakes-seqpos}
+%\end{figure}
+
+
+
+
+\begin{figure}[t] % [h]
+    \caption{RTs and error rates by median split and sequential position.}
+        \centering
+        \begin{subfigure}[t]{0.41\textwidth}
+                \includegraphics[width=\textwidth]{figures/RL_HitRT_by_seqpos}
+                \subcaption{Mean of subjects' median correct response times by median split and sequential position. The correct RTs for the two performance groups were not significantly correlated ($r=0.17$, t(8)=0.48, $p=0.65$). Error bars reflect +/-1SE.}
+        \end{subfigure}
+        ~
+        \begin{subfigure}[t]{0.41\textwidth} 
+                \includegraphics[width=\textwidth]{figures/RL_mistakes_by_seqpos}
+                \subcaption{The mean number of errors made at each position in the sequence split by performance group. The errors are highly correlated ($r=$.79, t(8)=3.68, $p<.01$), though note how much worse sequence position 5 was for the low-performing group relative to the next-worst position (8). Low-performers showed twice as many errors in position 5 as in 8, while the high-performing group showed only a 25\% increase in errors. Error bars reflect +/-1SE.}
+        \end{subfigure}
+        \label{fig:RT-ACC-seqpos}
 \end{figure}
 
-\begin{figure}[!h]
-  \centering
-  \includegraphics[width=0.48\textwidth]{figures/RL_mistakes_by_seqpos}
-  \caption{The mean number of errors made at each position in the sequence split by performance group. The errors are highly correlated ($r=$.79, t(8)=3.68, $p<.01$), though note how much worse sequence position 5 was for the low-performing group relative to the next-worst position (8). Low-performers showed twice as many errors in position 5 as in 8, while the high-performing group showed only a 25\% increase in errors. Error bars reflect +/-1SE.}
-  \label{fig:mistakes-seqpos}
-\end{figure}
+\addtocounter{figure}{-1}
+
+
+
  
 \subsubsection{Comparison to Experiment 1}
 
